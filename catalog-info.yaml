@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: uqex1k96y-nodejs-gitops
+  description: This is GitOps manifest for uqex1k96y-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=uqex1k96y-nodejs
+    backstage.io/kubernetes-id: uqex1k96y-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: uqex1k96y-nodejs
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:uqex1k96y-nodejs

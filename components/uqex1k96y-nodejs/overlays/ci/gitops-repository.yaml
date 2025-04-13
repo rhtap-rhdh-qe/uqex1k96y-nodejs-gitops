@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: uqex1k96y-nodejs-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/uqex1k96y-nodejs-gitops
